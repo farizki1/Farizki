@@ -105,7 +105,7 @@ def search_nilai(userInput):
         userInput = str(input('Ingin Mencari data nilai Mahasiswa?(y/n) : '))
         if (userInput == 'y'):
             if(len(daftar_nilai) > 0):
-                cari_nim = str(input('\nMasukkan NIM: ')).upper()
+                cari_nim = str(input('\nMasukkan NIM: '))
                 if (cari_nim in daftar_nilai):
                     view_nilai([daftar_nilai[cari_nim]])
                 else:
